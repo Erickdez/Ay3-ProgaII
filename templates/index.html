@@ -4,88 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Hernández</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    
 </head>
 <body>
-    <h1>My Portfolio</h1>
+    <h1>Erick Hernández</h1>
 
     <h2>PORTFOLIO</h2>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-</div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
+    <!-- Botones de filtro -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Todo </button>
+      <button class="btn" onclick="filterSelection('voluntariado')"> Voluntariado </button>
+      <button class="btn" onclick="filterSelection('trabajo')"> Trabajo </button>
+      <button class="btn" onclick="filterSelection('contactos')"> Contactos</button>
     </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
+    
+    <!-- Contenido Portfolio -->
+    <div class="row">
 
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
+        <!-- Sección de Voluntariado -->
+      <div class="column voluntariado">
+        <div class="content">
+          <h4>Voluntariado</h4>
+        </div>
+      </div>
+      <div class="column voluntariado">
+        <div class="content">
+          <img src="/Images/TECHO.png" alt="TECHO" style="width:100%">
+          <h4>TECHO</h4>
+          <p>2015 - Actualidad</p>
+        </div>
+      </div>
+      <div class="column voluntariado">
+        <div class="content">
+          <img src="/Images/MUNESEN.png" alt="MUN ESEN" style="width:100%">
+          <h4>MUN ESEN</h4>
+          <p>2017 - 2019</p>
+        </div>
+      </div>
+      <div class="column voluntariado">
+        <div class="content">
+          <img src="/Images/MIH.png" alt="Make It Happen" style="width:100%">
+          <h4>Make It Happen</h4>
+          <p>2017 - 2019</p>
+        </div>
+      </div>
+    
+      <!-- Sección de Experiencia Laboral -->
+      <div class="column trabajo">
+        <div class="content">
+          <h4>Experiencia Laboral</h4>
+        </div>
+      </div>
+      <div class="column trabajo">
+        <div class="content">
+          <img src="/Images/TECHO.png" alt="TECHO" style="width:100%">
+          <h4>Coordinador de Voluntariado - TECHO</h4>
+          <p>2020 - Actualidad</p>
+        </div>
+      </div>
+      <div class="column trabajo">
+        <div class="content">
+          <img src="/Images/ESEN.png" alt="ESEN" style="width:100%">
+          <h4>Ayudante Materias</h4>
+          <p>2019 - Actualidad</p>
+        </div>
+      </div>
+      <div class="column trabajo">
+        <div class="content">
+          <img src="/Images/Excel.jfif" alt="Excel Automotriz" style="width:100%">
+          <h4>Optimización de proecesos - Excel Automotriz</h4>
+          <p>Dec 2019 - Ene 2020</p>
+        </div>
+      </div>
+      
+      <!-- Sección de Contactos -->
+      <div class="column contactos">
+        <div class="content">
+          <h4>Contactos</h4>
+        </div>
+      </div>
+      <div class="column contactos">
+        <div class="content">
+          <img src="/Images/Sven.jfif" alt="Sven" style="width:100%">
+          <h4>Sven</h4>
+          <p>sguzman@esen.edu.sv</p>
+        </div>
+      </div>
+      <div class="column contactos">
+        <div class="content">
+          <img src="/Images/Chema.jfif" alt="Chema" style="width:100%">
+          <h4>Chema</h4>
+          <p>jvelasquez@esen.edu.sv</p>
+        </div>
+      </div>
+      <div class="column contactos">
+        <div class="content">
+          <img src="/Images/Balbino.jfif" alt="Balbino" style="width:100%">
+          <h4>Balbino</h4>
+          <p>baylagas@esen.edusv</p>
+        </div>
+      </div>
+    <!-- END GRID -->
     </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
 
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
+    <!-- Javascript -->
+    <script src="/script.js"></script>
 
-</body>
 </html>
