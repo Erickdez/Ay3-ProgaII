@@ -12,8 +12,6 @@
   
   <h2>Registro Académico</h2>
   <h4>Excelencia Académica y Oportunidad para Todos</h4>
-  
-  <a href="/templates/login.html"><h3>Iniciar Sesión</h3></a> 
 
   <!-- Pestañas -->
   <div class="container">
@@ -21,21 +19,18 @@
             <a href="#" onclick="hideDivById('inicio')">Inicio</a>
             <a href="#" onclick="hideDivById('servicios')">Servicios</a>
             <a href="#" onclick="hideDivById('reglamentos')">Reglamentos</a>
-            <a href="#" onclick="hideDivById('formularios')">Formularios</a>
             <a href="#" onclick="hideDivById('contacto')">Contáctenos</a>
         </div>
 
         <div class="content">
 
-            <div style="display:none" id="inicio" name="w3includes"
-                w3-include-html="http://localhost:5000/inicio"> </div> 
-            <div style="display:none" id="servicios" name="w3includes"
+            <div style="display:block" id="inicio" name="pages"
+                w3-include-html="{{url_for('inicio')}}"> </div> 
+            <div style="display:none" id="servicios" name="pages"
                 w3-include-html="{{url_for('servicios')}}"></div>
-            <div style="display:none" id="reglamentos" name="w3includes"
+            <div style="display:none" id="reglamentos" name="pages"
                 w3-include-html="{{url_for('reglamentos')}}"></div>
-            <div style="display:none" id="formularios" name="w3includes"
-                w3-include-html="{{url_for('formularios')}}"></div>
-            <div style="display:none" id="contacto" name="w3includes"
+            <div style="display:none" id="contacto" name="pages"
                 w3-include-html="{{url_for('contacto')}}"></div>
             
         </div>

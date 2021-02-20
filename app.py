@@ -21,25 +21,9 @@ def servicios():
 def reglamentos():
     return render_template("reglamentos.html")
 
-@app.route("/formularios")
-def formularios():
-    return render_template("formularios.html")
-
 @app.route("/contacto")
 def contacto():
     return render_template("contacto.html")
-
-@app.route("/login")
-def login():
-    return render_template("login.html")
-
-@app.route("/register")
-def register():
-    return render_template("register.html")
-    
-@app.route("/notas")
-def notas():
-    return render_template("notas.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
