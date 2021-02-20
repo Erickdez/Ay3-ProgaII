@@ -16,6 +16,7 @@ function hideAllDivW3Includes() {
     }
 }
 
+//Send Contact email
 function sendEMail() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -23,8 +24,4 @@ function sendEMail() {
 
     alert("De: " + name + " <" + email + "> \nMensaje:" + message);
 
-}
-
-function Save() {
-    
 }
