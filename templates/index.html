@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netfliz</title>
+    <title>Registro Académico</title>
     <link rel="stylesheet" href="/static/style.css">
     
 </head>
@@ -13,9 +13,37 @@
   <h2>Registro Académico</h2>
   <h4>Excelencia Académica y Oportunidad para Todos</h4>
   
+  <a href="/templates/login.html"><h3>Iniciar Sesión</h3></a> 
+
   <!-- Pestañas -->
+  <div class="container">
+        <div name="headers" class="container">
+            <a href="#" onclick="hideDivById('inicio')">Inicio</a>
+            <a href="#" onclick="hideDivById('servicios')">Servicios</a>
+            <a href="#" onclick="hideDivById('reglamentos')">Reglamentos</a>
+            <a href="#" onclick="hideDivById('formularios')">Formularios</a>
+            <a href="#" onclick="hideDivById('contacto')">Contáctenos</a>
+        </div>
+
+        <div class="content">
+
+            <div style="display:block" id="inicio" name="pages"
+                w3-include-html="/templates/inicio.html"> </div> 
+            <div style="display:none" id="servicios" name="pages"
+                w3-include-html="{{url_for('servicios')}}"></div>
+            <div style="display:none" id="reglamentos" name="pages"
+                w3-include-html="{{url_for('reglamentos')}}"></div>
+            <div style="display:none" id="formularios" name="pages"
+                w3-include-html="{{url_for('formularios')}}"></div>
+            <div style="display:none" id="contacto" name="pages"
+                w3-include-html="{{url_for('contacto')}}"></div>
+            
+        </div>
+    </div>
+
 
   <!-- Javascript -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="/static/script.js"></script>
 
 </html>
