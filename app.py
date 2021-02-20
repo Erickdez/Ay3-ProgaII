@@ -22,7 +22,7 @@ def reglamentos():
     return render_template("reglamentos.html")
 
 @app.route("/formularios")
-def inicio():
+def formularios():
     return render_template("formularios.html")
 
 @app.route("/contacto")

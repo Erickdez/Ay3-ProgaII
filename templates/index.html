@@ -27,15 +27,15 @@
 
         <div class="content">
 
-            <div style="display:block" id="inicio" name="pages"
-                w3-include-html="/templates/inicio.html"> </div> 
-            <div style="display:none" id="servicios" name="pages"
+            <div style="display:none" id="inicio" name="w3includes"
+                w3-include-html="http://localhost:5000/inicio"> </div> 
+            <div style="display:none" id="servicios" name="w3includes"
                 w3-include-html="{{url_for('servicios')}}"></div>
-            <div style="display:none" id="reglamentos" name="pages"
+            <div style="display:none" id="reglamentos" name="w3includes"
                 w3-include-html="{{url_for('reglamentos')}}"></div>
-            <div style="display:none" id="formularios" name="pages"
+            <div style="display:none" id="formularios" name="w3includes"
                 w3-include-html="{{url_for('formularios')}}"></div>
-            <div style="display:none" id="contacto" name="pages"
+            <div style="display:none" id="contacto" name="w3includes"
                 w3-include-html="{{url_for('contacto')}}"></div>
             
         </div>
