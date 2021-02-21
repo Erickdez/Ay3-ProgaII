@@ -22,7 +22,7 @@ function sendEMail() {
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
-    alert("De: " + name + " <" + email + "> \nMensaje: \n " + message);
+    alert("De: " + name + " <" + email + "> \nMensaje:\n" + message);
 
 }
 
