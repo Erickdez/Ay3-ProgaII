@@ -10,13 +10,15 @@
     
     <h1>Contacto</h1>
 
-        <label for="user_reg">Nombre Completo</label>
-        <input type="text" name="name" id="name" placeholder="Nombre">
-        <label for="passw_reg">Correo electrónico</label>
-        <input type="text" name="email" id="email" placeholder="Correo">
-        <label for="passw_reg">Consulta</label>
-        <input type="text" name="message" id="message" placeholder="Mensaje">
-        <button type="button" id="button" onclick="sendEMail()" >Enviar</button>
+    <label for="user_reg">Nombre Completo</label>
+    <input type="text" name="name" id="name" placeholder="Nombre">
+    <label for="passw_reg">Correo electrónico</label>
+    <input type="text" name="email" id="email" placeholder="Correo">
+    <label for="passw_reg">Consulta</label>
+    <input type="text" name="message" id="message" placeholder="Mensaje">
+    <button type="button" id="button" onclick="sendEMail()" >Enviar</button>
+
+    <a href="{{url_for('home')}}">Regresar</a>
 
   <script src="/static/script.js"></script>
 
