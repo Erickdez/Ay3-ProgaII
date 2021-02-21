@@ -19,19 +19,19 @@
             <a href="#" onclick="hideDivById('inicio')">Inicio</a>
             <a href="#" onclick="hideDivById('servicios')">Servicios</a>
             <a href="#" onclick="hideDivById('reglamentos')">Reglamentos</a>
-            <a href="{{url_for('contacto')}}">Contáctenos</a>
+            <a href="#" onclick="hideDivById('contacto')">Contáctenos</a>
         </div>
 
         <div class="content">
 
             <div style="display:block" id="inicio" name="pages"
-                w3-include-html="{{url_for('inicio')}}"> </div> 
+                w3-include-html="https://ay3-progra2.herokuapp.com/inicio"> </div> 
             <div style="display:none" id="servicios" name="pages"
-                w3-include-html="{{url_for('servicios')}}"></div>
+                w3-include-html="https://ay3-progra2.herokuapp.com/servicios"></div>
             <div style="display:none" id="reglamentos" name="pages"
-                w3-include-html="{{url_for('reglamentos')}}"></div>
-            <!--<div style="display:none" id="contacto" name="pages"
-                w3-include-html="{{url_for('contacto')}}"></div>-->
+                w3-include-html="https://ay3-progra2.herokuapp.com/reglamentos"></div>
+            <div style="display:none" id="contacto" name="pages"
+                w3-include-html="https://ay3-progra2.herokuapp.com/contacto"></div>
             
         </div>
     </div>
