@@ -16,8 +16,6 @@ function hideAllDivW3Includes() {
     }
 }
 
-w3.includeHTML()
-
 //Send Contact email
 function sendEMail() {
     var name = document.getElementById("name").value;
