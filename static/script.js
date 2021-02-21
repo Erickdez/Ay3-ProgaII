@@ -25,5 +25,3 @@ function sendEMail() {
     alert("De: " + name + " <" + email + "> \nMensaje:\n" + message);
 
 }
-
-w3.includeHTML()
