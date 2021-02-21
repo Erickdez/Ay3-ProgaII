@@ -12,15 +12,16 @@
 
     <label for="user_reg">Nombre Completo</label>
     <input type="text" name="name" id="name" placeholder="Nombre">
+    <br>
     <label for="passw_reg">Correo electrónico</label>
     <input type="text" name="email" id="email" placeholder="Correo">
+    <br>
     <label for="passw_reg">Consulta</label>
     <input type="text" name="message" id="message" placeholder="Mensaje">
+    <br>
     <button type="button" id="button" onclick="sendEMail()" >Enviar</button>
 
-    <a href="{{url_for('home')}}">Regresar</a>
-
-  <script src="/static/script.js"></script>
+  <script src="{{url_for('static', filename='script.js')}}"></script>
 
 </body>
 </html>
