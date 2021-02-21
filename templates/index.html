@@ -25,20 +25,19 @@
         <div class="content">
 
             <div style="display:block" id="inicio" name="pages"
-                w3-include-html="{{url_for('inicio')}}"> </div> 
+                w3-include-html="https://ay3-progra2.herokuapp.com/inicio"> </div> 
             <div style="display:none" id="servicios" name="pages"
-                w3-include-html="{{url_for('servicios')}}"></div>
+                w3-include-html="https://ay3-progra2.herokuapp.com/servicios"></div>
             <div style="display:none" id="reglamentos" name="pages"
-                w3-include-html="{{url_for('reglamentos')}}"></div>
+                w3-include-html="https://ay3-progra2.herokuapp.com/reglamentos"></div>
             <div style="display:none" id="contacto" name="pages"
-                w3-include-html="{{url_for('contacto')}}"></div>
-            
+                w3-include-html="https://ay3-progra2.herokuapp.com/contacto"></div>               
         </div>
     </div>
 
 
   <!-- Javascript -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script src="{{url_for('static', filename='script.js')}}"></script>
+  <script src="/static/script.js"></script>
 
 </html>
