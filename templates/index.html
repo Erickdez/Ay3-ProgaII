@@ -19,7 +19,7 @@
             <a href="#" onclick="hideDivById('inicio')">Inicio</a>
             <a href="#" onclick="hideDivById('servicios')">Servicios</a>
             <a href="#" onclick="hideDivById('reglamentos')">Reglamentos</a>
-            <a href="#" onclick="hideDivById('contacto')">Contáctenos</a>
+            <a href="{{url_for('contacto')}}">Contáctenos</a>
         </div>
 
         <div class="content">
@@ -30,8 +30,8 @@
                 w3-include-html="{{url_for('servicios')}}"></div>
             <div style="display:none" id="reglamentos" name="pages"
                 w3-include-html="{{url_for('reglamentos')}}"></div>
-            <div style="display:none" id="contacto" name="pages"
-                w3-include-html="{{url_for('contacto')}}"></div>
+            <!--<div style="display:none" id="contacto" name="pages"
+                w3-include-html="{{url_for('contacto')}}"></div>-->
             
         </div>
     </div>
